@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>《91° Freedom》</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/未命名-1.png" type="image/png">
+</head>
+
+<body class="wall-texture overflow-x-hidden" style=" cursor: url(images/未命名-1.png),auto;">
+  <canvas id="trail-canvas"></canvas>
+  <div class="one  vh-100 w-100 bg-white pf ">
+    <div class="pr w-100 h-100">
+      <div class="pa d-fxcc h-100 w-100">
+        <img src="images/無標題0473.gif" alt="" class="">
+      </div>
+    </div>
+  </div>
+  <!-- 導覽列 -->
+  <header class="header" id="navbar-example2" style="position: fixed !important;">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <img src="images/LOGO.PNG" alt="91° Freedom LOGO" class="logo-img">
+        91° Freedom
+      </a>
+      <div class="d-inline-block d-md-none">
+        <button class="btn" data-bs-target="#headcoll" data-bs-toggle="collapse"><i
+            class="fa-solid fa-bars"></i></button>
+        <div class="collapse pa w-100 start-0 mt-5" id="headcoll" style="z-index: 200;">
+          <div class="nav-links h-100 nav-pills bg-c1">
+            <div class="nav-item w-100"><a class="nav-link" href="#story">研究動機</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#synopsis">劇情大綱</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#characters">角色介紹</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#logo">Logo</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#scenery-storyboard">場景</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#storyboard">分鏡</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#swot-gantt">SWOT</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#wj7">甘特圖</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#team">組員</a></div>
+            <div class="nav-item w-100"><a class="nav-link" href="#media">預告片</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="d-none d-md-block">
+        <div class="nav-links d-fxcc h-100 nav-pills">
+          <div class="nav-item"><a class="nav-link" href="#story">研究動機</a></div>
+          <div class="nav-item"><a class="nav-link" href="#synopsis">劇情大綱</a></div>
+          <div class="nav-item"><a class="nav-link" href="#characters">角色介紹</a></div>
+          <div class="nav-item"><a class="nav-link" href="#logo">Logo</a></div>
+          <div class="nav-item"><a class="nav-link" href="#scenery-storyboard">場景</a></div>
+          <div class="nav-item"><a class="nav-link" href="#storyboard">分鏡</a></div>
+          <div class="nav-item"><a class="nav-link" href="#swot-gantt">SWOT</a></div>
+          <div class="nav-item"><a class="nav-link" href="#wj7">甘特圖</a></div>
+          <div class="nav-item"><a class="nav-link" href="#team">組員</a></div>
+          <div class="nav-item"><a class="nav-link" href="#media">預告片</a></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 1. HERO 封面區塊 (已改為白色/淺色背景與明亮風格) -->
+  <section id="hero" class="pr vh-100 overflow-hidden banner ">
+    <div class="pa bg-white h-100 w-100 ban-bg"></div>
+    <div class="hero-image-stage movable-card pa z-3" id="card0">
+      <img src="images/大圖.PNG" alt="封面主視覺背景" class=" w-100 h-100vh object-fit-cover varrr2 d-none d-md-inline-block">
+      <img src="images/大圖.PNG" alt="封面主視覺背景"
+        class="pa start-0 bottom-0 w-100 h-25 object-fit-cover d-md-none d-inline-block" style="width: 100vw;">
+    </div>
+    <div class="hero-image-stage ">
+      <img src="images/大圖改.png" alt="封面主視覺背景" class="w-100 h-100vh object-fit-cover ">
+    </div>
+    <div class="hero-image-overlay"></div>
+    <div class="pa top-0 mb-5 pb-5 ms-5 ps-5 img1 z-3 d-none d-md-inline-block" id="jsParallaxImg">
+      <div class="varrr">
+        <div class="hero-title-overlay ban-text w-100 movable-card blur2 " id="card">
+          <span class="hero-badge display-6">F06</span>
+          <h1>91° Freedom<span class="en-title"></span></h1>
+          <p class="hero-tagline">「真正的完美，究竟是毫無缺陷，還是勇敢接受自己的不完美？」</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-title-overlay p-3 ban-text w-100 movable-card blur2 d-md-none d-inline-block" id="card">
+      <span class="hero-badge display-6">F06</span>
+      <h1>91° Freedom<span class="en-title"></span></h1>
+      <p class="hero-tagline">「真正的完美，究竟是毫無缺陷，還是勇敢接受自己的不完美？」</p>
+    </div>
+  </section>
+
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" class="p-3 rounded-2" tabindex="0">
+    <!-- 2. 研究動機  -->
+    <section id="story" class="d-md-none d-block p-1">
+      <h2 class="section-title movable-card" id="card1">研究動機</h2>
+      <p class="section-desc"></p>
+
+      <div class="story-container parallax-bg animate-box p-1">
+        <div class="story-card hover2  p-3 ">
+          <h3><i class="fa-solid fa-lightbulb" style="color:var(--primary-yellow);"></i> 創作理念</h3>
+          <p>
+            現代社會中，許多人習慣以固定標準衡量自己，追求所謂的「完美」，卻也因此陷入自我懷疑與壓力。我們希望透過本次創作，探討過度追求完美是否會忽略不同事物所擁有的價值與美感。
+          </p>
+          <p>
+            本研究以冷抽象與熱抽象為方向，分析蒙德里安幾何抽象的秩序與規律，以及傑克遜・波洛克自由奔放的情感表現，並將兩種藝術風格轉化為動畫視覺語言。
+          </p>
+          <p>
+            我們希望藉由尼爾追求完美圓形的故事，引導觀眾重新思考完美的定義，理解美也能存在於自由、變化與不完美之中。
+          </p>
+        </div>
+
+        <div class="story-card hover2 p-3 ">
+          <h3><i class="fa-solid fa-bullseye" style="color:var(--primary-red);"></i> 研究目的</h3>
+          <p>
+            本作品以冷抽象與熱抽象的對比作為創作核心，透過不同藝術風格呈現角色內心的轉變。
+          </p>
+          <p>冷抽象參考蒙德里安《百老匯爵士樂》，以幾何線條、規律構圖與明亮色彩展現秩序與理性；熱抽象則參考傑克遜・波洛克《速記圖》，運用自由線條與不規則形態表現情感、想像力與創造力。</p>
+          <p>
+            我們希望將抽象藝術融入動畫敘事，讓線條、色彩與構圖成為傳達角色心理變化的重要語言。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="story" class="d-none d-md-block">
+      <h2 class="section-title movable-card" id="card1">研究動機</h2>
+      <p class="section-desc"></p>
+
+      <div class="story-container parallax-bg animate-box">
+        <div class="story-card hover2 ">
+          <h3><i class="fa-solid fa-lightbulb" style="color:var(--primary-yellow);"></i> 創作理念</h3>
+          <p>
+            現代社會中，許多人習慣以固定標準衡量自己，追求所謂的「完美」，卻也因此陷入自我懷疑與壓力。我們希望透過本次創作，探討過度追求完美是否會忽略不同事物所擁有的價值與美感。
+          </p>
+          <p>
+            本研究以冷抽象與熱抽象為方向，分析蒙德里安幾何抽象的秩序與規律，以及傑克遜・波洛克自由奔放的情感表現，並將兩種藝術風格轉化為動畫視覺語言。
+          </p>
+          <p>
+            我們希望藉由尼爾追求完美圓形的故事，引導觀眾重新思考完美的定義，理解美也能存在於自由、變化與不完美之中。
+          </p>
+        </div>
+
+        <div class="story-card hover2">
+          <h3><i class="fa-solid fa-bullseye" style="color:var(--primary-red);"></i> 研究目的</h3>
+          <p>
+            本作品以冷抽象與熱抽象的對比作為創作核心，透過不同藝術風格呈現角色內心的轉變。
+          </p>
+          <p>冷抽象參考蒙德里安《百老匯爵士樂》，以幾何線條、規律構圖與明亮色彩展現秩序與理性；熱抽象則參考傑克遜・波洛克《速記圖》，運用自由線條與不規則形態表現情感、想像力與創造力。</p>
+          <p>
+            我們希望將抽象藝術融入動畫敘事，讓線條、色彩與構圖成為傳達角色心理變化的重要語言。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2.5  (起承轉合) -->
+    <section id="synopsis" class="d-md-none d-block">
+      <h2 class="section-title movable-card" id="card2">劇情大綱 </h2>
+      <p class="section-desc my-5"></p>
+
+      <div class="synopsis-grid my-5 py-5">
+        <div class="synopsis-card">
+          <div class="synopsis-badge">起</div>
+          <div class="synopsis-phase"></div>
+          <p>主角生活在蒙德里安的畫作裡，所有事物都由筆直的線條與方形組成。某天，他透過望遠鏡看見美術館搬來一幅擁有完美圓形的畫作讓他產生想畫出完美圓形的念頭。</p>
+        </div>
+
+        <div class="synopsis-card">
+          <div class="synopsis-badge">承</div>
+          <div class="synopsis-phase"></div>
+          <p>主角拿著三角板不斷嘗試，但始終無法成功。就在這時，一位小女孩突然闖入他的世界，拿著蠟筆在地上隨意塗鴉，留下很多歪扭的線條，讓主角很生氣。</p>
+        </div>
+
+        <div class="synopsis-card">
+          <div class="synopsis-badge">轉</div>
+          <div class="synopsis-phase"></div>
+          <p>主角一路追趕小女孩，直到在世界邊緣將她攔下。他意外發現小女孩畫的線條在微微顫動，像有生命一般。那些自由的線條匯聚成一個圓，比自己畫的圓更加自然與完整。主角意識到，自己過去認為完美的直線雖然整齊，卻像冰冷的牢籠。
+          </p>
+        </div>
+
+        <div class="synopsis-card">
+          <div class="synopsis-badge">合</div>
+          <div class="synopsis-phase"></div>
+          <p>主角放下三角板，嘗試不用工具畫出一道不完美的弧線。雖然不夠精準，卻充滿溫度與生命力，讓他感受到真正的自由。最後，他接受了小女孩，與她一起創作。</p>
+        </div>
+      </div>
+    </section>
+    <section id="synopsis" class="vh-100 d-none d-md-block">
+      <h2 class="section-title movable-card" id="card2">劇情大綱 </h2>
+      <p class="section-desc my-5"></p>
+
+      <div class="synopsis-grid parallax-bg my-5 py-5">
+        <div class="synopsis-card parallax-x5">
+          <div class="synopsis-badge">起</div>
+          <div class="synopsis-phase"></div>
+          <p>主角生活在蒙德里安的畫作裡，所有事物都由筆直的線條與方形組成。某天，他透過望遠鏡看見美術館搬來一幅擁有完美圓形的畫作讓他產生想畫出完美圓形的念頭。</p>
+        </div>
+
+        <div class="synopsis-card parallax-x6">
+          <div class="synopsis-badge">承</div>
+          <div class="synopsis-phase"></div>
+          <p>主角拿著三角板不斷嘗試，但始終無法成功。就在這時，一位小女孩突然闖入他的世界，拿著蠟筆在地上隨意塗鴉，留下很多歪扭的線條，讓主角很生氣。</p>
+        </div>
+
+        <div class="synopsis-card parallax-x7">
+          <div class="synopsis-badge">轉</div>
+          <div class="synopsis-phase"></div>
+          <p>主角一路追趕小女孩，直到在世界邊緣將她攔下。他意外發現小女孩畫的線條在微微顫動，像有生命一般。那些自由的線條匯聚成一個圓，比自己畫的圓更加自然與完整。主角意識到，自己過去認為完美的直線雖然整齊，卻像冰冷的牢籠。
+          </p>
+        </div>
+
+        <div class="synopsis-card parallax-x8">
+          <div class="synopsis-badge">合</div>
+          <div class="synopsis-phase"></div>
+          <p>主角放下三角板，嘗試不用工具畫出一道不完美的弧線。雖然不夠精準，卻充滿溫度與生命力，讓他感受到真正的自由。最後，他接受了小女孩，與她一起創作。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. 角色 -->
+    <section id="characters" class=" p-0">
+      <div class="d-md-none d-block">
+        <h2 class="section-title" id="card4">角色介紹</h2>
+        <p class="section-desc"></p>
+
+        <div class="character-stage-wrapper p-0">
+
+          <div class="char-translucent-card animate-box p-0">
+            <!-- 角色 1：尼爾 (Niel) -->
+            <div class="char-slide active p-0" id="charSlide0">
+              <div class="full-body-container">
+                <span class="full-body-tag">全身立繪</span>
+                <div class="char-img-frame tab-content w-100">
+                  <div class="tab-pane fade show active" id="name1" role="tabpanel" aria-labelledby="name1"
+                    tabindex="0">
+
+                    <img src="images/尼爾.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name2" role="tabpanel" aria-labelledby="name2" tabindex="0">
+
+                    <img src="images/尼爾1.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name3" role="tabpanel" aria-labelledby="name3" tabindex="0">
+
+                    <img src="images/尼爾2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade show" id="name7" role="tabpanel" aria-labelledby="name7" tabindex="0">
+
+                    <img src="images/尼爾2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="char-details-container">
+                <div class="char-header">
+                  <div class="char-no"></div>
+                  <div class="char-name">尼爾</div>
+                </div>
+                <div class="three-view-title"><i class="fa-solid fa-shapes"></i> 三視圖展示 <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <div class="three-view-grid" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <div class="view-box  active" id="name1-tap" data-bs-toggle="pill" data-bs-target="#name1"
+                    type="button" role="tab" aria-controls="name1" aria-selected="true">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾0.png" alt="尼爾正面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>正面 (niel-front.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" id="name2-tap" data-bs-toggle="pill" data-bs-target="#name2" type="button"
+                    role="tab" aria-controls="name2" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾1.png" alt="尼爾側面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>側面 (niel-side.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" id="name3-tap" data-bs-toggle="pill" data-bs-target="#name3" type="button"
+                    role="tab" aria-controls="name3" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾2.png" alt="尼爾背面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>背面 (niel-back.jpg)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="char-info-box">
+                  <p style="margin-bottom:0.3rem;"><strong>性格：</strong> 追求完美、固執</p>
+                  <p style="margin-bottom:0.3rem;"><strong>外型：</strong> 藍色方塊人，拿著三角板和黑色代針筆</p>
+                  <p><strong>設計理念：</strong> 以方形幾何造型搭配三角板與畫筆，凸顯理性、嚴謹與固執的特質，展現對完美直線的執著。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 角色 2：露比 (Ruby) -->
+            <div class="char-slide p-0" id="charSlide1">
+              <div class="full-body-container">
+                <span class="full-body-tag" style="background:var(--primary-yellow); color:black;">全身立繪</span>
+                <div class="char-img-frame tab-content w-100">
+                  <div class="tab-pane fade show active" id="name4" role="tabpanel" aria-labelledby="name4"
+                    tabindex="0">
+
+                    <img src="images/露比0.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name5" role="tabpanel" aria-labelledby="name5" tabindex="0">
+
+                    <img src="images/露比1.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name6" role="tabpanel" aria-labelledby="name6" tabindex="0">
+
+                    <img src="images/露比2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name8" role="tabpanel" aria-labelledby="name8" tabindex="0">
+
+                    <img src="images/露比2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="char-details-container">
+                <div class="char-header">
+                  <div class="char-no" style="color:var(--primary-blue);"></div>
+                  <div class="char-name" style="color:var(--primary-black);">露比</div>
+                </div>
+
+                <div class="three-view-title"><i class="fa-solid fa-shapes"></i> 三視圖展示 <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <div class="three-view-grid" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <div class="view-box active" id="name1-tap" data-bs-toggle="pill" data-bs-target="#name4"
+                    type="button" role="tab" aria-controls="name4" aria-selected="true">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比0.png" alt="露比正面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>正面 (ruby-front.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" data-bs-toggle="pill" data-bs-target="#name5" type="button" role="tab"
+                    aria-controls="name5" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比1.png" alt="露比側面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>側面 (ruby-side.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" data-bs-toggle="pill" data-bs-target="#name6" type="button" role="tab"
+                    aria-controls="name6" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比2.png" alt="露比背面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>背面 (ruby-back.jpg)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="char-info-box" style="border-left-color: var(--primary-yellow);">
+                  <p style="margin-bottom:0.3rem;"><strong>性格：</strong> 樂觀開朗、活力四射、古靈精怪</p>
+                  <p style="margin-bottom:0.3rem; "><strong>外型：</strong> 綁著雙馬尾，穿著黃色短裙，拿著一隻黑色蠟筆，但卻可以畫出彩色的顏色</p>
+                  <p class="pb-4"><strong>設計理念：</strong> 以雙馬尾搭配蠟筆，展現天真自由、童趣活潑的形象。</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="char-indicators">
+          <button class="char-dot-btn active df" onclick="switchChar(0)">01. 尼爾 <br> ( Niel )</button>
+          <button class="char-dot-btn" onclick="switchChar(1)">02. 露比 <br> (Ruby)</button>
+        </div>
+      </div>
+    </section>
+    <section id="characters" class="">
+      <div class="d-none d-md-block">
+        <h2 class="section-title" id="card4">角色介紹</h2>
+        <p class="section-desc"></p>
+
+        <div class="character-stage-wrapper">
+          <div class="glass-arrow arrow-left-pos" onclick="prevChar()"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="glass-arrow arrow-right-pos" onclick="nextChar()"><i class="fa-solid fa-chevron-right"></i></div>
+
+          <div class="char-translucent-card animate-box">
+            <!-- 角色 1：尼爾 (Niel) -->
+            <div class="char-slide active" id="charSlide0">
+              <div class="full-body-container">
+                <span class="full-body-tag">全身立繪</span>
+                <div class="char-img-frame tab-content w-100">
+                  <div class="tab-pane fade show active" id="name1" role="tabpanel" aria-labelledby="name1"
+                    tabindex="0">
+
+                    <img src="images/尼爾.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name2" role="tabpanel" aria-labelledby="name2" tabindex="0">
+
+                    <img src="images/尼爾1.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name3" role="tabpanel" aria-labelledby="name3" tabindex="0">
+
+                    <img src="images/尼爾2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+
+                  </div>
+                  <div class="tab-pane fade show" id="name7" role="tabpanel" aria-labelledby="name7" tabindex="0">
+
+                    <img src="images/尼爾2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="char-details-container">
+                <div class="char-header">
+                  <div class="char-no"></div>
+                  <div class="char-name">尼爾</div>
+                </div>
+                <div class="three-view-title"><i class="fa-solid fa-shapes"></i> 三視圖展示 <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <div class="three-view-grid" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <div class="view-box  active" id="name1-tap" data-bs-toggle="pill" data-bs-target="#name1"
+                    type="button" role="tab" aria-controls="name1" aria-selected="true">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾0.png" alt="尼爾正面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>正面 (niel-front.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" id="name2-tap" data-bs-toggle="pill" data-bs-target="#name2" type="button"
+                    role="tab" aria-controls="name2" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾1.png" alt="尼爾側面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>側面 (niel-side.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" id="name3-tap" data-bs-toggle="pill" data-bs-target="#name3" type="button"
+                    role="tab" aria-controls="name3" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/尼爾2.png" alt="尼爾背面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>背面 (niel-back.jpg)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="char-info-box">
+                  <p style="margin-bottom:0.3rem;"><strong>性格：</strong> 追求完美、固執</p>
+                  <p style="margin-bottom:0.3rem;"><strong>外型：</strong> 藍色方塊人，拿著三角板和黑色代針筆</p>
+                  <p><strong>設計理念：</strong> 以方形幾何造型搭配三角板與畫筆，凸顯理性、嚴謹與固執的特質，展現對完美直線的執著。</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 角色 2：露比 (Ruby) -->
+            <div class="char-slide" id="charSlide1">
+              <div class="full-body-container">
+                <span class="full-body-tag" style="background:var(--primary-yellow); color:black;">全身立繪</span>
+                <div class="char-img-frame tab-content w-100">
+                  <div class="tab-pane fade show active" id="name4" role="tabpanel" aria-labelledby="name4"
+                    tabindex="0">
+
+                    <img src="images/露比0.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name5" role="tabpanel" aria-labelledby="name5" tabindex="0">
+
+                    <img src="images/露比1.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name6" role="tabpanel" aria-labelledby="name6" tabindex="0">
+
+                    <img src="images/露比2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade show" id="name8" role="tabpanel" aria-labelledby="name8" tabindex="0">
+
+                    <img src="images/露比2.png" alt="尼爾全身立繪"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="char-img-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                        style="font-size:2rem; margin-bottom:8px;"></i><br>尼爾全身立繪<br><small>(images/niel-full.jpg)</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="char-details-container">
+                <div class="char-header">
+                  <div class="char-no" style="color:var(--primary-blue);"></div>
+                  <div class="char-name" style="color:var(--primary-black);">露比</div>
+                </div>
+
+                <div class="three-view-title"><i class="fa-solid fa-shapes"></i> 三視圖展示 <i class="fa-solid fa-cube"></i>
+                </div>
+
+                <div class="three-view-grid" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <div class="view-box active" id="name1-tap" data-bs-toggle="pill" data-bs-target="#name4"
+                    type="button" role="tab" aria-controls="name4" aria-selected="true">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比0.png" alt="露比正面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>正面 (ruby-front.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" data-bs-toggle="pill" data-bs-target="#name5" type="button" role="tab"
+                    aria-controls="name5" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比1.png" alt="露比側面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>側面 (ruby-side.jpg)</div>
+                    </div>
+                  </div>
+                  <div class="view-box" data-bs-toggle="pill" data-bs-target="#name6" type="button" role="tab"
+                    aria-controls="name6" aria-selected="false">
+
+                    <div class="char-view-frame">
+                      <img src="images/露比2.png" alt="露比背面"
+                        onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                      <div class="char-view-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                          style="font-size:1.2rem; margin-bottom:3px;"></i><br>背面 (ruby-back.jpg)</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="char-info-box" style="border-left-color: var(--primary-yellow);">
+                  <p style="margin-bottom:0.3rem;"><strong>性格：</strong> 樂觀開朗、活力四射、古靈精怪</p>
+                  <p style="margin-bottom:0.3rem; "><strong>外型：</strong> 綁著雙馬尾，穿著黃色短裙，拿著一隻黑色蠟筆，但卻可以畫出彩色的顏色</p>
+                  <p class="pb-4"><strong>設計理念：</strong> 以雙馬尾搭配蠟筆，展現天真自由、童趣活潑的形象。</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="char-indicators">
+          <button class="char-dot-btn active df" onclick="switchChar(0)">01. 尼爾 ( Niel )</button>
+          <button class="char-dot-btn" onclick="switchChar(1)">02. 露比 (Ruby)</button>
+        </div>
+      </div>
+    </section>
+    <!-- 3.5 延伸 LOGO 設計展區 -->
+    <div class="d-md-none d-block">
+      <div class="logo-extension-container" id="logo">
+        <h3 class="logo-section-title">LOGO 設計</h3>
+        <p class="logo-section-desc"></p>
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="logo-card">
+              <span class="logo-badge-ver">舊版一</span>
+              <div class="logo-frame">
+                <img src="images/無標題437 (1).png" alt="LOGO 舊版一"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V1 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="logo-card">
+              <span class="logo-badge-ver">舊版二</span>
+              <div class="logo-frame">
+                <img src="images/無標題448.png" alt="LOGO 舊版二"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V2 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="logo-card">
+              <span class="logo-badge-ver ">舊版三</span>
+              <div class="logo-frame">
+                <img src="images/無標題451.png" alt="LOGO 舊版三"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V3 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="logo-card">
+              <span class="logo-badge-ver">舊版四</span>
+              <div class="logo-frame">
+                <img src="images/無標題453.png" alt="LOGO 舊版四"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V4 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-fxcc w-100 py-5">
+              <div class="w-75">
+                <div class="logo-card logo-card-final z-3 movable-card hover"
+                  style="height: 120%;transform: scale(1.2);" id="card3">
+                  <span class="logo-badge-ver badge-final" style="transform:scale(1.2);"> 最終版</span>
+                  <div class="logo-frame p-3">
+                    <img src="images/LOGO.PNG" alt="LOGO 最終版"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-star"
+                        style="font-size:1.5rem; margin-bottom:5px; color:var(--primary-yellow);"></i><br>LOGO 最終版</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="logo-concept-box animate-box">
+              <h4><i class="fa-solid fa-compass-drafting" style="color:var(--primary-red);"></i> LOGO 設計理念</h4>
+              <p>本專案之標誌設計核心，旨在完美呼應動畫短片中「從絕對理性走向呼吸自由」的敘事軌跡。初期版本（Ver. 01 ~ Ver. 04）多方嘗試了過度嚴謹的 90
+                度直角矩陣與單純的線條分割，卻始終帶有冰冷與壓迫感。經過多次解構與重組，最終定案版大膽打破了傳統思維，將標準的「90°」刻意向外推展微小而關鍵的 1 度，形成象徵打破框架的 **「91°
+                弧度轉折」**。整體造型兼具新造型主義的結構美學與有機曲線的靈動生命力，象徵不完美之美與心靈真正開始呼吸的藝術價值。</p>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+    <div class="d-none d-md-block">
+      <div class="logo-extension-container" id="logo">
+        <h3 class="logo-section-title">LOGO 設計</h3>
+        <p class="logo-section-desc"></p>
+        <div class="row">
+          <div class="col-3">
+            <div class="logo-card parallax-x">
+              <span class="logo-badge-ver">舊版一</span>
+              <div class="logo-frame">
+                <img src="images/無標題437 (1).png" alt="LOGO 舊版一"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V1 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="logo-card parallax-x2">
+              <span class="logo-badge-ver">舊版二</span>
+              <div class="logo-frame">
+                <img src="images/無標題448.png" alt="LOGO 舊版二"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V2 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="logo-card parallax-x3">
+              <span class="logo-badge-ver ">舊版三</span>
+              <div class="logo-frame">
+                <img src="images/無標題451.png" alt="LOGO 舊版三"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V3 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="logo-card parallax-x4">
+              <span class="logo-badge-ver">舊版四</span>
+              <div class="logo-frame">
+                <img src="images/無標題453.png" alt="LOGO 舊版四"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-icons"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>LOGO V4 舊版</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="d-fxcc w-100 py-5">
+              <div class="w-25">
+                <div class="logo-card logo-card-final z-3 movable-card hover"
+                  style="height: 120%;transform: scale(1.2);" id="card3">
+                  <span class="logo-badge-ver badge-final" style="transform:scale(1.2);"> 最終版</span>
+                  <div class="logo-frame p-3">
+                    <img src="images/LOGO.PNG" alt="LOGO 最終版"
+                      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="logo-placeholder" style="display:none;"><i class="fa-solid fa-star"
+                        style="font-size:1.5rem; margin-bottom:5px; color:var(--primary-yellow);"></i><br>LOGO 最終版</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="logo-concept-box animate-box">
+              <h4><i class="fa-solid fa-compass-drafting" style="color:var(--primary-red);"></i> LOGO 設計理念</h4>
+              <p>本專案之標誌設計核心，旨在完美呼應動畫短片中「從絕對理性走向呼吸自由」的敘事軌跡。初期版本（Ver. 01 ~ Ver. 04）多方嘗試了過度嚴謹的 90
+                度直角矩陣與單純的線條分割，卻始終帶有冰冷與壓迫感。經過多次解構與重組，最終定案版大膽打破了傳統思維，將標準的「90°」刻意向外推展微小而關鍵的 1 度，形成象徵打破框架的 **「91°
+                弧度轉折」**。整體造型兼具新造型主義的結構美學與有機曲線的靈動生命力，象徵不完美之美與心靈真正開始呼吸的藝術價值。</p>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+    <!-- 4 場景 -->
+    <section id="scenery-storyboard">
+      <div class="sub-section-wrap" id="scenery">
+        <h2 class="section-title">場景介紹</h2>
+        <p class="section-desc fs-5 fw-bolder">Blender建設(三渲二)</p>
+
+        <div class="scenery-grid-container">
+          <div class="scenery-card  parallax-x9 ">
+            <img src="images/螢幕擷取畫面 2026-08-09 193142.png" alt="場景 01"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 01<br><small>(images/scene1.jpg)</small></div>
+          </div>
+          <div class="scenery-card">
+            <img src="images/背景4.png" alt="場景 02"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 02<br><small>(images/scene2.jpg)</small></div>
+          </div>
+          <div class="scenery-card  parallax-x10">
+            <img src="images/背景3.png" alt="場景 03"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 03<br><small>(images/scene3.jpg)</small></div>
+          </div>
+          <div class="scenery-card parallax-x9">
+            <img src="images/背景2.png" alt="場景 04"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 04<br><small>(images/scene4.jpg)</small></div>
+          </div>
+          <div class="scenery-card ">
+            <img src="images/背景15.png" alt="場景 05"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 05<br><small>(images/scene5.jpg)</small></div>
+          </div>
+          <div class="scenery-card parallax-x10">
+            <img src="images/IMG_5636.PNG" alt="場景 06"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="scenery-card-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                style="font-size:2rem; margin-bottom:8px;"></i>SCENE 06<br><small>(images/scene6.jpg)</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--5 分鏡-->
+    <div class="d-md-none d-block">
+      <div class="sub-section-wrap p-0" id="storyboard" style="margin-top: 5rem;">
+        <h2 class="section-title">分鏡 </h2>
+        <p class="section-desc"></p>
+
+        <div class="sb-wrapper ">
+          <div class="glass-arrow arrow-left-pos" onclick="prevSbPage()"><i class="fa-solid fa-chevron-left"></i></div>
+          <div class="glass-arrow arrow-right-pos" onclick="nextSbPage()"><i class="fa-solid fa-chevron-right"></i>
+          </div>
+
+
+          <div class="sb-page-container animate-box">
+            <div class="sb-page active" id="sbPage0">
+              <div class="sb-card">
+                <div class="sb-frame">
+                  <span class="sb-no-badge">CUT #01</span>
+                  <img src="images/1-1.PNG" alt="鏡頭 01"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                      style="font-size:1.5rem; margin-bottom:5px;"></i><br>極致幾何都市全景遠景</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sb-page" id="sbPage1">
+              <div class="sb-card">
+                <div class="sb-frame">
+                  <span class="sb-no-badge">CUT #05</span>
+                  <img src="images/1-5.PNG" alt="鏡頭 05"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                  <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                      style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <div class="sb-page" id="sbPage2">
+            <div class="sb-card w-100">
+              <div class="sb-frame w-100">
+                <span class="sb-no-badge">CUT #13</span>
+                <img src="images/2-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+                  style="width: 300px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage3">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #17</span>
+                <img src="images/2-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage4">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #21</span>
+                <img src="images/3-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage5">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #25</span>
+                <img src="images/3-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage6">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #01</span>
+                <img src="images/1-1.PNG" alt="鏡頭 01"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>極致幾何都市全景遠景</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage7">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #05</span>
+                <img src="images/1-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="sb-page" id="sbPage8">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #13</span>
+                <img src="images/2-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage9">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #17</span>
+                <img src="images/2-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage10">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #21</span>
+                <img src="images/3-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage11">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #25</span>
+                <img src="images/3-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage12">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #01</span>
+                <img src="images/1-1.PNG" alt="鏡頭 01"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>極致幾何都市全景遠景</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage13">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #05</span>
+                <img src="images/1-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="sb-page" id="sbPage14">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #13</span>
+                <img src="images/2-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage15">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #17</span>
+                <img src="images/2-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage16">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #21</span>
+                <img src="images/3-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage17">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #25</span>
+                <img src="images/3-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="d-none d-md-block">
+    <div class="sub-section-wrap" id="storyboard" style="margin-top: 5rem;">
+      <h2 class="section-title">分鏡 </h2>
+      <p class="section-desc"></p>
+
+      <div class="sb-wrapper ">
+        <div class="glass-arrow arrow-left-pos" onclick="prevSbPage()"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="glass-arrow arrow-right-pos" onclick="nextSbPage()"><i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+
+        <div class="sb-page-container animate-box">
+          <div class="sb-page active" id="sbPage0">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #01</span>
+                <img src="images/1-1.PNG" alt="鏡頭 01"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>極致幾何都市全景遠景</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #02</span>
+                <img src="images/1-2.PNG" alt="鏡頭 02"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾特寫：專注繪圖</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #03</span>
+                <img src="images/1-3.PNG" alt="鏡頭 03"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>精密三角尺與時鐘</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #04</span>
+                <img src="images/1-4.PNG" alt="鏡頭 04"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天台上的望遠鏡</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage1">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #05</span>
+                <img src="images/1-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #06</span>
+                <img src="images/1-6.PNG" alt="鏡頭 06"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾震驚的瞳孔 reflection</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #07</span>
+                <img src="images/1-7.PNG" alt="鏡頭 07"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>邊界高牆出現裂縫</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #08</span>
+                <img src="images/1-8.PNG" alt="鏡頭 08"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>露比現身：圓潤有機造型</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage2">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #09</span>
+                <img src="images/2-1.PNG" alt="鏡頭 09"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>兩人在街道對峙中景</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #10</span>
+                <img src="images/2-2.PNG" alt="鏡頭 10"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>第一道手繪歪斜弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #11</span>
+                <img src="images/2-3.PNG" alt="鏡頭 11"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>廣角：新世界畫卷展現</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #12</span>
+                <img src="images/2-4.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage3">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #13</span>
+                <img src="images/2-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #14</span>
+                <img src="images/2-6.PNG" alt="鏡頭 06"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾震驚的瞳孔 reflection</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #15</span>
+                <img src="images/2-7.PNG" alt="鏡頭 07"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>邊界高牆出現裂縫</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #16</span>
+                <img src="images/2-8.PNG" alt="鏡頭 08"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>露比現身：圓潤有機造型</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage4">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #17</span>
+                <img src="images/2-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #18</span>
+                <img src="images/3-1.PNG" alt="鏡頭 06"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾震驚的瞳孔 reflection</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #19</span>
+                <img src="images/3-2.PNG" alt="鏡頭 07"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>邊界高牆出現裂縫</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #20</span>
+                <img src="images/3-4.PNG" alt="鏡頭 08"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>露比現身：圓潤有機造型</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-page" id="sbPage5">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #21</span>
+                <img src="images/3-5.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #22</span>
+                <img src="images/3-6.PNG" alt="鏡頭 06"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾震驚的瞳孔 reflection</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #23</span>
+                <img src="images/3-7.PNG" alt="鏡頭 07"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>邊界高牆出現裂縫</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #24</span>
+                <img src="images/3-8.PNG" alt="鏡頭 08"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>露比現身：圓潤有機造型</div>
+              </div>
+            </div>
+          </div>
+          <div class="sb-page" id="sbPage6">
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #25</span>
+                <img src="images/3-9.PNG" alt="鏡頭 05"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>天空中劃過一道彩色弧線</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #26</span>
+                <img src="images/3-10.PNG" alt="鏡頭 06"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>尼爾震驚的瞳孔 reflection</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #27</span>
+                <img src="images/3-12.PNG" alt="鏡頭 07"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>邊界高牆出現裂縫</div>
+              </div>
+            </div>
+            <div class="sb-card">
+              <div class="sb-frame">
+                <span class="sb-no-badge">CUT #28</span>
+                <img src="images/3-15.PNG" alt="鏡頭 08"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                <div class="sb-frame-placeholder" style="display:none;"><i class="fa-solid fa-image"
+                    style="font-size:1.5rem; margin-bottom:5px;"></i><br>露比現身：圓潤有機造型</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6 & 7. SWOT與甘特圖 -->
+  <section id="swot-gantt" class="d-md-none d-block p-1">
+    <h2 class="section-title">SWOT分析</h2>
+    <p class="section-desc"></p>
+
+    <div class="swot-image-container">
+      <div class="swot-image-frame animate-box2 hover3">
+        <img src="images/SWOT.png" alt="SWOT 分析總結圖片"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="swot-img-placeholder" style="display:none;">
+          <i class="fa-solid fa-image" style="font-size:2rem; margin-bottom:8px;"></i>SWOT
+          分析總結圖片<br><small>(images/swot-overview.jpg)</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="swot-grid p-1">
+      <div class="swot-card swot-card-s hover2">
+        <h3 style="color:var(--primary-red);"><i class="fa-solid fa-gem"></i> (Strengths)優勢</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>主題貼近現代社會人們對完美主義的反思，具共鳴潛力。</strong></li>
+          <li><strong>無對白也能敘事。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-w hover2">
+        <h3 style="color:var(--primary-blue);"><i class="fa-solid fa-triangle-exclamation"></i> (Weaknesses)劣勢
+        </h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>抽象主題需透過精細設計與表現手法來傳達。</strong></li>
+          <li><strong>情緒層次需要細膩處理。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-o hover2">
+        <h3 style="color:var(--accent-gold);"><i class="fa-solid fa-lightbulb"></i> (Opportunities)機會</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>可促進觀者對完美主義與自由表達的重新思考。</strong></li>
+          <li><strong>可作為藝術與心理結合主題。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-t hover2">
+        <h3 style="color:var(--accent-green);"><i class="fa-solid fa-shield-halved"></i> (Threats)威脅</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>過於抽象可能導致理解困難。</strong></li>
+          <li><strong>大眾可能較少關注深層議題，影響傳播效果。</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="swot-gantt" class="d-none d-md-block ">
+    <h2 class="section-title">SWOT分析</h2>
+    <p class="section-desc"></p>
+
+    <div class="swot-image-container">
+      <div class="swot-image-frame animate-box2 hover3">
+        <img src="images/SWOT.png" alt="SWOT 分析總結圖片"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="swot-img-placeholder" style="display:none;">
+          <i class="fa-solid fa-image" style="font-size:2rem; margin-bottom:8px;"></i>SWOT
+          分析總結圖片<br><small>(images/swot-overview.jpg)</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="swot-grid">
+      <div class="swot-card swot-card-s hover2">
+        <h3 style="color:var(--primary-red);"><i class="fa-solid fa-gem"></i> (Strengths)優勢</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>主題貼近現代社會人們對完美主義的反思，具共鳴潛力。</strong></li>
+          <li><strong>無對白也能敘事。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-w hover2">
+        <h3 style="color:var(--primary-blue);"><i class="fa-solid fa-triangle-exclamation"></i> (Weaknesses)劣勢
+        </h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>抽象主題需透過精細設計與表現手法來傳達。</strong></li>
+          <li><strong>情緒層次需要細膩處理。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-o hover2">
+        <h3 style="color:var(--accent-gold);"><i class="fa-solid fa-lightbulb"></i> (Opportunities)機會</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>可促進觀者對完美主義與自由表達的重新思考。</strong></li>
+          <li><strong>可作為藝術與心理結合主題。</strong></li>
+        </ul>
+      </div>
+
+      <div class="swot-card swot-card-t hover2">
+        <h3 style="color:var(--accent-green);"><i class="fa-solid fa-shield-halved"></i> (Threats)威脅</h3>
+        <div class="swot-sub"></div>
+        <ul class="swot-list">
+          <li><strong>過於抽象可能導致理解困難。</strong></li>
+          <li><strong>大眾可能較少關注深層議題，影響傳播效果。</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section id="wj7">
+    <h2 class="section-title bouncing-text" id="wave-text" style="margin-top: 5rem;">甘特圖</h2>
+    <p class="section-desc"></p>
+    <div class="gantt-container-center animate-box">
+      <div class="gantt-image-frame hover3">
+        <img src="images/甘特圖.png" alt="專案開發甘特圖"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="gantt-img-placeholder" style="display:none;">
+          <i class="fa-solid fa-calendar-days"
+            style="font-size:2rem; margin-bottom:8px;"></i>專案開發甘特圖<br><small>(images/gantt.png)</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. 核心團隊 (已放大圖片、移除圓形與背景顏色) -->
+  <section id="team" class="d-md-none d-block h-100">
+    <h2 class="section-title">成員介紹</h2>
+    <p class="section-desc"></p>
+
+    <div class="team-grid-5">
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team1">
+          <div class="team-avatar-box">
+            <img src="images/人4 呀.PNG" alt="導演" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-paintbrush"></i></div>
+          </div>
+          <h4>蔡宜璇 / 組長</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">動畫草稿、LOGO設計</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team2">
+          <div class="team-avatar-box">
+            <img src="images/人1 7.PNG" alt="動態師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-film"></i></div>
+          </div>
+          <h4>邱郁淇 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、美術設定、動畫線稿、分鏡繪製、角色設計</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team3">
+          <div class="team-avatar-box">
+            <img src="images/人3 鼠.PNG" alt="概念美術" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-pen-nib"></i></div>
+          </div>
+          <h4>陳旻欣 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、分鏡繪製、場景建設 (Blender)</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team4">
+          <div class="team-avatar-box">
+            <img src="images/人2 李.PNG" alt="配樂師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-music"></i></div>
+          </div>
+          <h4>李亦晨 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">檔案管理、影片配樂、企畫書、動畫上色</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team5">
+          <div class="team-avatar-box">
+            <img src="images/人6 重.png" alt="專案管理" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <h4>吳崇睿 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">網頁設計</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="d-none d-md-block">
+    <h2 class="section-title">成員介紹</h2>
+    <p class="section-desc"></p>
+
+    <div class="team-grid-5">
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team1">
+          <div class="team-avatar-box">
+            <img src="images/人4 呀.PNG" alt="導演" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-paintbrush"></i></div>
+          </div>
+          <h4>蔡宜璇 / 組長</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">動畫草稿、LOGO設計</p>
+        </div>
+      </div>
+      <div class="parallax-p2">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team2">
+          <div class="team-avatar-box">
+            <img src="images/人1 7.PNG" alt="動態師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-film"></i></div>
+          </div>
+          <h4>邱郁淇 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、美術設定、動畫線稿、分鏡繪製、角色設計</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team3">
+          <div class="team-avatar-box">
+            <img src="images/人3 鼠.PNG" alt="概念美術" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-pen-nib"></i></div>
+          </div>
+          <h4>陳旻欣 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、分鏡繪製、場景建設 (Blender)</p>
+        </div>
+      </div>
+      <div class="parallax-p2">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team4">
+          <div class="team-avatar-box">
+            <img src="images/人2 李.PNG" alt="配樂師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-music"></i></div>
+          </div>
+          <h4>李亦晨 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">檔案管理、影片配樂、企畫書、動畫上色</p>
+        </div>
+      </div>
+      <div class="parallax-p1">
+        <div class="team-card " data-bs-toggle="modal" data-bs-target="#team5">
+          <div class="team-avatar-box">
+            <img src="images/人6 重.png" alt="專案管理" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <h4>吳崇睿 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">網頁設計</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. 動畫預告片與影音區 Media Section -->
+  <section id="media" class="d-block d-md-none p-1 pt-5">
+    <h2 class="section-title">預告片</h2>
+    <p class="section-desc"></p>
+
+    <div class="media-container animate-box2 p-1">
+      <div class="video-mockup p-0">
+        <video src="video/0810(2).mp4" class="w-100 object-fit-cover h-100" controls></video>
+        <!-- <div class="play-btn"><i class="fa-solid fa-play" style="margin-left: 5px;"></i></div>
+        <div style="font-family:var(--font-code); font-weight:900;">PLAY OFFICIAL TRAILER (01:45)</div>-->
+      </div>
+    </div>
+  </section>
+  <section id="media" class="d-md-block d-none">
+    <h2 class="section-title">預告片</h2>
+    <p class="section-desc"></p>
+
+    <div class="media-container animate-box2">
+      <div class="video-mockup">
+        <video src="video/0810(2).mp4" class="w-100 object-fit-cover h-100" controls></video>
+        <!-- <div class="play-btn"><i class="fa-solid fa-play" style="margin-left: 5px;"></i></div>
+        <div style="font-family:var(--font-code); font-weight:900;">PLAY OFFICIAL TRAILER (01:45)</div>-->
+      </div>
+    </div>
+  </section>
+  </div>
+
+  <div class="modal fade" id="team1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content blur1">
+        <div class="team-card">
+          <div class="team-avatar-box">
+            <img src="images/人4 呀.PNG" alt="導演" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-paintbrush"></i></div>
+          </div>
+          <h4>蔡宜璇 / 組長</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">動畫草稿、LOGO設計</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="team2">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content blur1">
+        <div class="team-card">
+          <div class="team-avatar-box">
+            <img src="images/人1 7.PNG" alt="動態師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-film"></i></div>
+          </div>
+          <h4>邱郁淇 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、美術設定、動畫線稿、分鏡繪製、角色設計</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="team3">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content blur1">
+        <div class="team-card">
+          <div class="team-avatar-box">
+            <img src="images/人3 鼠.PNG" alt="概念美術" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-pen-nib"></i></div>
+          </div>
+          <h4>陳旻欣 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">故事發想、分鏡繪製、場景建設 (Blender)</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="team4">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content blur1">
+        <div class="team-card">
+          <div class="team-avatar-box">
+            <img src="images/人2 李.PNG" alt="配樂師" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-music"></i></div>
+          </div>
+          <h4>李亦晨 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">檔案管理、影片配樂、企畫書、動畫上色</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="team5">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content blur1">
+        <div class="team-card">
+          <div class="team-avatar-box">
+            <img src="images/人6 重.png" alt="專案管理" class="team-avatar-img"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="team-avatar-icon" style="display:none;"><i class="fa-solid fa-laptop-code"></i></div>
+          </div>
+          <h4>吳崇睿 / 組員</h4>
+          <div class="team-role"></div>
+          <p class="team-desc">網頁設計</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 頁尾 -->
+  <footer class="pb-2 pt-3">
+    <p style="font-family: var(--font-serif); font-weight:900; font-size:1.3rem;">《91° Freedom》THE SPECIAL FEATURE
+    </p>
+    <div class=" text-color text-center">
+      <p class="fs-5 mb-1">組長: 蔡宜璇 </p>
+      <p class="fs-6">組員: 邱郁淇 、 陳旻欣 、 李亦晨 、 吳崇睿</p>
+    </div>
+    <p style="font-size:0.85rem; color:#888; ">&copy;Website Design Copyright 2026 © All Rights
+      Reserved by 吳崇睿</p>
+  </footer>
+
+  <!-- 互動腳本 -->
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
